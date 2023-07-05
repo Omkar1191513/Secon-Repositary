@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grouping Form Controls in HTML</title>
+    <style>
+        fieldset{
+          border: 1px solid rgb(255,232,57);
+          width: 400px;
+          margin:auto;
+          background-color: lightgrey;
+         }
+         input:invalid {
+        border: 2px dashed red;
+         }
+         input:valid{
+            border: 2px solid green;
+         }
+        </style>
+</head>
+<body><center>
+    <form action="" method="">
+            <fieldset style="height:450px;width:450px;">
+            <legend align="center"><strong>Registration Form</strong></legend>        
+            <label>Firstname: <input type="text" name="firstname"></label> <br><br>          
+            <label>Lastname: <input type="text" name="lastname"></label> <br> <br>
+            <label>Password: <input type="password" name="pswd"></label> <br> <br>
+            <label>Gender</label>            
+            <label><input type="radio" name="gender" value="male"> Male</label>            
+            <label><input type="radio" name="gender" value="female"> Female</label><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>        
+           	<label>Hobbies</label>            
+            <label><input type="checkbox" name="hobbies" value="football"> Football</label>
+            <label><input type="checkbox" name="hobbies" value="cricket"checked> Cricket</label>
+            <label><input type="checkbox" name="hobbies" value="baseball"> Baseball</label><br><br>
+            
+           <label>Email Address: <input type="email" name="email"></label><br> <br>
+            <label>Phone Number: <input type="text" name="phone"></label><br><br>
+            <label for="address">Address:</label>
+            <textarea rows="3" cols="30" name="address" id="address"></textarea><br><br>
+        
+        <label for="file-select">Upload:</label><input type="file" name="upload" id="file-select"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+    </form></center>
+</body>
+</html>

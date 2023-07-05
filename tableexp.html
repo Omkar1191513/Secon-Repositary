@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td,tr{
+        /*  border-collapse: collapse;*/
+            border: 1px solid black;
+        }
+            </style>
+</head>
+<body>
+    <table>
+        <caption>A test table with merged cells</caption>
+        <tr>
+            <td rowspan="2">   </td> 
+            <th colspan="2">Average </th>
+            <td rowspan="2">  Red eyes</td>
+        </tr>
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003.</td>
+            <td>40%</td>
+        </tr>
+        <th>Females</th>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+    </table>
+    <script>
+        let n=parseInt(Math.random()*11);
+        let usn=parseInt(prompt("enter any number b/w 1 to 10"));
+        if(n===usn)
+        alert("your guess is correct");
+        else 
+        alert("it is not correct");
+
+        document.write(" system generated random number "+n);
+
+    </script>
+</body>
+</html>

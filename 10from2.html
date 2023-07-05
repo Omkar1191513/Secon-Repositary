@@ -1,0 +1,101 @@
+<!DOUTYPE html>
+	<html>
+	<head><title>Registration  form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+      <form action=" " method="GET" target="_blank" name="stud" onsubmit="return validate()">
+			<fieldset style="height:420;width:450;"> 
+				<legend><strong>User Registration </strong></legend>
+    <table  cellpadding="2" cellspacing="2" align="center">
+
+<tr>
+	<td colspan="3">
+<label for="username">Username:</label> <input type="text" name="username" id="username" placeholder="enter user name" required>
+    </td>
+</tr>
+<tr>
+	<td colspan="3">
+		<label for="user-pwd">Password:</label> <input type="password" name="user-password" id="user-pwd" placeholder="password" required>
+	</td>
+</tr>
+<tr>
+	<td colspan="3">
+<label for="mailid">Email id:</label><input type="email" name="email" id="email-id" placeholder="enter email" required>
+     </td>
+</tr>
+<tr>
+	<td>
+	  <label for="radio">Gender</label>
+	</td>
+	  <td>
+	  	<input type="radio" name="gender" id="male"><label for="male">Male</label>
+     </td>
+     <td>
+       <input type="radio"name="gender" id="female"><label for="female"> Female</label>
+   </td>
+</tr>
+ <tr>
+ 	<td colspan="3">
+ <label for="mydate"> Dateof Borth :</label> <input type="date" value="2019-04-15" id="mydate" required>
+    </td>
+</tr>
+<tr>
+  <td><label for="mydata">Choose:</label></td>
+  <td colspan="2">
+    <input type="text" list="mydata" placeholder="select option"/>
+<datalist id="mydata">
+    <option label="Mr" value="Mister"/>
+    <option label="Mrs" value="Mistress"/>
+    <option label="Ms" value="Miss"/>
+</datalist>
+</td>
+</tr>
+ <tr>
+ 	<td colspan="3">
+ <label for="myphone">Telephone Number:</label><input type="tel"  id="myphone"  placeholder="xx-xxxx-xxxx"required>
+   </td>
+</t r>
+<tr>
+  <td><label for="city">City:</label></td><td colspan="2"> <select name="city" id="city"> <option value="sydney">Sydney</option> <option value="melbourne">Melbourne</option> <option value="cromwell">Cromwell</option> </select></td></tr>
+
+ <tr>
+ 	<td>
+         <label for="Favorite game">Choose Favorite Game</label>
+     </td>
+     <td> 
+    	<input type="checkbox" name="sports" id="cricket"><label for="cricket" checked>Cricket</label>
+        </td>
+        <td>
+        	<input type="checkbox" name="sports" id="Baseball"><label for="baseball">Baseball</label>
+        </td>
+        <td>
+        	<input type="checkbox" name="sports" id="football"><label for="footBall">  FootBall</label>
+        </td>
+    </tr>
+  <tr>
+  	<td colspan="3">
+  <label for="mycolor">Select your Favorite Color:</label> <input type="color" value="#00ff00" id="mycolor">
+    </td>
+  </tr>
+  <tr>
+  	<td colspan="3">
+      <label for="address" align="center">Address:</label> <textarea rows="3" cols="30" name="address" id="address" placeholder="enter address"></textarea>
+    </td>
+  </tr>
+<tr>
+	<td colspan="3">
+       <label for="file-select">Upload:</label><input type="file" name="upload" id="file-select">
+     </td>
+ </tr>
+<tr>
+	<td><input type="submit" value="Submit"></td><td colspan="2"> <input type="reset" value="Reset">
+	</td>
+</tr>
+
+		</fieldset> 
+
+</table>
+		</form>
+	</body>
+</html>
